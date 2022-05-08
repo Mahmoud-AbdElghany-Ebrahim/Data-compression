@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.mycompany.lz77;
-
 import java.util.ArrayList;
     
 /**
@@ -52,20 +45,15 @@ public class Main {
             if (p != i && counter >= ch) {
                 ret = i;
                 flag = false;
-                //System.out.println( ch + "," + counter);
                 ch = counter;
             }
             if (k == B.length()&&counter >= ch) {
                 ret = i;
                 flag = true;
                 ch = counter;
-              //  System.out.println("ret" + ret);
-                //return ret;
             }
             counter = 0;
         }
-
-        // System.out.println("ret"+ret);
         return ret;
     }
   
@@ -92,10 +80,6 @@ public class Main {
                     break;
                 }
             }
-            //length=currSub.length();
-
-            //System.out.println(buffer +","+ currSub);
-            //System.out.println(findLastIdx(buffer, currSub));
             if (findLastIdx(buffer, currSub) == -1) {
                 tags = new Tag(0, 0, word.charAt(i));
             } else {
